@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+	    background-image: url("images/bg.jpeg");
+            background-size: cover; /* Pour couvrir toute la surface du body */
+            background-position: center; /* Pour centrer l'image */
         }
         .container {
             width: 80%;
@@ -27,11 +30,22 @@
             text-align: left;
             margin-top: 20px;
         }
+	.centered-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .centered-link a {
+            text-decoration: none;
+            color: blue;
+        }
+        .centered-link a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>
+        <h1>Bienv</h1>
         <p>Voici mon premier site vitrine, je suis ingénieur système et réseaux informatique.<br>Mes jeux favoris sont :</p>
         <ul>
             <li>Minecraft</li>
@@ -40,7 +54,9 @@
             <li>Fifa</li>
             <li>Days Gone</li>
         </ul>
-        <p>Je publierai sur ce site mes prochains documents d'optimisation de jeu sur Pokémon GO.</p>
+        <p>Je publierai sur ce site mes prochains documents d'optimisation de jeu sur Pokemon GO.</p>
+	<p>J'aime faire de l'OSINT, voir mon <a href="osint.html">portfolio OSINT</a>.</p>
+	<p>Je fais aussi quelques challenge sur la plateforme <a href="https://www.root-me.org/DahuniX">root-me</a>.<p>
     </div>
 </body>
 </html>

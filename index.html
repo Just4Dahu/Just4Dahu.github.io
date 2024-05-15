@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DahuniX</title>
+    <title>Mon premier site statique - DahuniX</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-	    background-image: url("images/bg.jpeg");
-            background-size: cover; /* Pour couvrir toute la surface du body */
-            background-position: center; /* Pour centrer l'image */
+            background-image: url("images/bg.jpg");
+            background-size: cover;
+            background-position: center;
         }
         .container {
             width: 80%;
             margin: 50px auto;
-            text-align: center;
-            border: 2px solid #333;
             padding: 20px;
             border-radius: 10px;
-            background-color: #f0f0f0;
+            background-color: rgba(255, 255, 255, 0.8);
         }
         h1 {
             color: #333;
@@ -30,22 +28,60 @@
             text-align: left;
             margin-top: 20px;
         }
-	.centered-link {
-            margin-top: 20px;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
             text-align: center;
         }
-        .centered-link a {
-            text-decoration: none;
-            color: blue;
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
         }
-        .centered-link a:hover {
-            text-decoration: underline;
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bienv</h1>
+        <h1>Mon premier site statique</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Cyclisme</a></li>
+                <li>
+                    <a href="#">Jeux</a>
+                    <ul>
+                        <li><a href="#">Pokemon Go</a></li>
+                        <li><a href="#">Minecraft</a></li>
+                        <li><a href="#">Vélo Manager</a></li>
+                        <li><a href="#">Fifa</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Professionnel</a>
+                    <ul>
+                        <li><a href="#">OSINT</a></li>
+                        <li><a href="#">Root-me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <p>Voici mon premier site vitrine, je suis ingénieur système et réseaux informatique.<br>Mes jeux favoris sont :</p>
         <ul>
             <li>Minecraft</li>
@@ -54,9 +90,8 @@
             <li>Fifa</li>
             <li>Days Gone</li>
         </ul>
-        <p>Je publierai sur ce site mes prochains documents d'optimisation de jeu sur Pokemon GO.</p>
-	<p>J'aime faire de l'OSINT, voir mon <a href="osint.html">portfolio OSINT</a>.</p>
-	<p>Je fais aussi quelques challenge sur la plateforme <a href="https://www.root-me.org/DahuniX">root-me</a>.<p>
+        <p>Je publierai sur ce site mes prochains documents d'optimisation de jeu sur <a href="https://votresite.com/documentation">Pokemon GO</a>.</p>
+        <p>J'aime faire de l'OSINT, voir mon <a href="osint.html">portfolio OSINT</a>.</p>
     </div>
 </body>
 </html>
